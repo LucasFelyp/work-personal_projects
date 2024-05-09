@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>black knights</title>
+    
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        const pwd = document.getElementById("password")
+        const pwd2 = document.getElementById("confirmpassword")
+
+        function validate(item){
+            item.setCostumValidaty("");
+            item.checkValidaty();
+
+            if (item == pwd2){
+                if(item.value === pwd.value) item.setCostumValidaty("");
+                else item.setCostumValidaty("As senhas digitadas não são iguais. Verifique e corrija.");
+            }
+        }
+    </script>
+</head>

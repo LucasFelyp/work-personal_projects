@@ -1,0 +1,35 @@
+<%- include("partials/header") %>
+<body>
+    <div class="register-container">
+        <h2>Cadastra-se</h2>
+        <div>
+            <form action="/registered" method="post" id="form-register">
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="Nome commpleto" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="date">Data de Nascimento:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="nickname">Apelido</label>
+                <input type="text" id="nickname" name="nickname" required>
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="password">Confirmar senha</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" required>
+
+                <input type="checkbox"><p>Todos os direitos autorais reservados</p> <a
+                href="https://docs.google.com/document/d/1HBITRocaRxKaUhdQot8u-iSURMjHlsox2wUzFqBfD8s/edit?usp=sharing"
+                target="_blank">Termos de Responsabilidade</a>
+                <hr>
+                <button type="submit" id="Send" value="Send">Cadastrar</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+<% include("partials/footer") %>
